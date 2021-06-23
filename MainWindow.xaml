@@ -1,0 +1,20 @@
+﻿<Window x:Class="Crypt_Watch.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Crypt_Watch"
+        mc:Ignorable="d"
+        Title="CryptoWatch" Icon="https://img.icons8.com/color/452/graph.png" Height="450" Width="800" Foreground="White" Background="White" OpacityMask="Black" BorderBrush="#FF2DBFB9"  >
+    <Grid x:Name="LayoutRoot" Cursor="AppStarting" RenderTransformOrigin="0.496,0.509" Background="#FF192746">
+        <Label x:Name="Header" Content="Crypto Watch" Margin="26,27,449,325" Foreground="White" FontFamily="Malgun Gothic" FontSize="36" Padding="5,6,5,6"/>
+        <Label x:Name="labelS"
+               Content="✓ Watch the cryptocurrency market &#xA;✓ Сreate personal notifications of market changes&#xD;&#xA;✓ Start monitoring the cryptocurrency&#xD;&#xA;market right now"
+               Margin="26,109,0,205" FontFamily="Malgun Gothic" FontWeight="Normal" FontStretch="Medium" FontStyle="Normal" FontSize="16" HorizontalAlignment="Left" 
+               Background="{x:Null}" Panel.ZIndex="4" Foreground="White" HorizontalContentAlignment="Left" Width="391" Padding="5,5,5,7" />
+        <Button x:Name="signUpButton" Content="Sign Up" Margin="26,340,612,29" Background="#FF344263" Visibility="Visible" FontFamily="Malgun Gothic" FontSize="20" Foreground="White" BorderBrush="#FF2AB7BD" Opacity="0.985" RenderTransformOrigin="0.5,0.5" Padding="0,5,0,5" Click="signUpButton_Click" />
+        <Image x:Name="MenuImg" Source="https://bitnovosti.com/wp-content/uploads/2018/04/03.bullish-bitcoin-4-bitnovosti.png" Margin="428,2,0,253"/>
+        <Image x:Name="MenuImg1" Source="https://img.icons8.com/cotton/2x/increase-profits.png" Margin="595,264,-34,0"/>
+        <Button x:Name="signInButton" Content="Sing In" Margin="238,340,400,29" Background="#FF344263" Visibility="Visible" FontFamily="Malgun Gothic" FontSize="20" Foreground="White" BorderBrush="#FF2AB7BD" Opacity="0.985" RenderTransformOrigin="0.5,0.5" Padding="0,5,0,5" Click="signInButton_Click"/>
+    </Grid>
+</Window>

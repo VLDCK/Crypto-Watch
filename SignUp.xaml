@@ -1,0 +1,27 @@
+﻿<Window x:Class="Crypt_Watch.SignUp"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Crypt_Watch"
+        mc:Ignorable="d"
+        Title="SignUp" Height="477" Width="401" Icon="https://img.icons8.com/color/452/graph.png">
+    <Grid x:Name="LayoutRoot" Cursor="AppStarting" RenderTransformOrigin="0.496,0.509" Background="#FF192746"  Margin="0,0,0,-6" ScrollViewer.VerticalScrollBarVisibility="Auto" ScrollViewer.HorizontalScrollBarVisibility="Auto">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition Width="0*"/>
+            <ColumnDefinition Width="0*"/>
+        </Grid.ColumnDefinitions>
+        <Label x:Name="Header" Content="Sign Up" Margin="78,4,79,362" Foreground="White" FontFamily="Malgun Gothic" FontSize="30" Padding="5,6,5,6" IsEnabled="False" MinWidth="120" MinHeight="60" MaxWidth="120" MaxHeight="60"/>
+
+
+        <TextBox x:Name="nameField" TextAlignment="Center" Foreground="#FF4D4D4D" Width="185"  Text="Name" FontFamily="Malgun Gothic" FontSize="13" Margin="105,123,105,296" BorderBrush="#FF2AB7BD" Background="#FFF9F9F9" SelectionBrush="White" CaretBrush="#FFB9B9B9" TextDecorations="{x:Null}" FontWeight="Normal" FontStyle="Normal" GotFocus="Field_GotFocus" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"/>
+        <Button x:Name="buttonReg" Margin="223,358,76,54" Content="Sing Up" Background="#FF344263" Visibility="Visible" FontFamily="Malgun Gothic" FontSize="13" Foreground="White" BorderBrush="#FF2AB7BD" Opacity="0.985" RenderTransformOrigin="0.5,0.5" Padding="0,5,0,5" Click="buttonReg_Click"/>
+        <Button x:Name="buttonBack" Margin="81,358,218,54" Content="Back" Background="#FF344263" Visibility="Visible" FontFamily="Malgun Gothic" FontSize="13" Foreground="White" BorderBrush="#FF2AB7BD" Opacity="0.985" RenderTransformOrigin="0.5,0.5" Padding="0,5,0,5" Click="buttonBack_Click"/>
+        <TextBox x:Name="mailField" TextAlignment="Center" Foreground="#FF4D4D4D" Width="185" Text="E-mail" FontFamily="Malgun Gothic" FontSize="13" Margin="105,171,105,248" BorderBrush="#FF2AB7BD" Background="#FFF9F9F9" SelectionBrush="White" CaretBrush="#FFB9B9B9" TextDecorations="{x:Null}" FontWeight="Normal" FontStyle="Normal" GotFocus="Field_GotFocus" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"/>
+        <PasswordBox x:Name="passwordField1"  PasswordChar="*" Foreground="#FF4D4D4D" FontFamily="Malgun Gothic" FontSize="13" Margin="105,251,105,169" BorderBrush="#FF2AB7BD" Background="#FFF9F9F9" SelectionBrush="White" CaretBrush="#FFB9B9B9" FontWeight="Normal" FontStyle="Normal" GotFocus="Field_GotFocus" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"/>
+        <PasswordBox x:Name="passwordField2" PasswordChar="*" Foreground="#FF4D4D4D" FontFamily="Malgun Gothic" FontSize="13" Margin="105,298,105,122" BorderBrush="#FF2AB7BD" Background="#FFF9F9F9" SelectionBrush="White" CaretBrush="#FFB9B9B9" FontWeight="Normal" FontStyle="Normal" GotFocus="Field_GotFocus" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"/>
+        <Label x:Name="pass" Content="Enter Password Twice" Margin="104,211,105,200" Foreground="White" FontFamily="Malgun Gothic" FontSize="13" Padding="5,6,5,6" IsEnabled="False" MinWidth="120" MinHeight="30" MaxWidth="150" MaxHeight="20"/>
+
+    </Grid>
+</Window>
